@@ -19,20 +19,23 @@ export PARENT_DIRECTORY="$(	pwd -P )" #get the current directory in which script
 
 #set the space separated list of ARCH_SRC files in ARCHS_DIR that you want to build for
 #ARCHS_SRC_TO_BUILD="armeabi-android4.0.4- armeabi armeabi-v7a arm64-v8a x86 x86-64"
-ARCHS_SRC_TO_BUILD="armeabi armeabi-v7a arm64-v8a x86 x86-64"
+#ARCHS_SRC_TO_BUILD="armeabi armeabi-v7a arm64-v8a x86 x86-64"
+ARCHS_SRC_TO_BUILD="arm64-v8a"
 
 #set the space separated list of project directories in PROJECTS_DIR that you want to build
 #the root of each project directory must contain the BUILD_FILE_NAME file that build and installs the project
 #PROJECTS_TO_BUILD="fuse bindfs"
-PROJECTS_TO_BUILD=""
+PROJECTS_TO_BUILD="fuse"
 
 #set the space separated list of post build scripts files in POST_BUILD_SCRIPTS_DIR that you want to run
 #POST_BUILD_SCRIPTS_TO_RUN="fusermount_extractor.sh bindfs_extractor.s"
-POST_BUILD_SCRIPTS_TO_RUN=""
+POST_BUILD_SCRIPTS_TO_RUN="fusermount_extractor.sh"
 
 
 #set path to NDK
-export ANDROID_NDK_ROOT="$HOME/Android/ndk/android-ndk-r20"
+# wget https://dl.google.com/android/repository/android-ndk-r20b-linux-x86_64.zip ~/Android/ndk/
+# and unzip
+export ANDROID_NDK_ROOT="$HOME/Android/ndk/android-ndk-r20b"
 #set path to the directory in which NDK toolchains should be created,
 #if prebuilt toolchains are not available or CREATE_TEMP_TOOLCHAINS is not set to "1"
 export TOOLCHAIN_DIR_PREFIX="$HOME/Android/ndk-toolchains"

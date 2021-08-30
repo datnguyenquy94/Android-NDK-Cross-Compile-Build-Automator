@@ -1,0 +1,3 @@
+[submodule "projects/fuse"]
+	path = projects/fuse
+	url = git@github.com:datnguyenquy94/fuse.git
