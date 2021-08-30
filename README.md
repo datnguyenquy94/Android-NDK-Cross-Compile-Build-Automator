@@ -11,13 +11,15 @@ Then simply run the android_ndk_cross_compile_build_automator.sh script and it w
 
 
 ## Usage Guide:
+- Build
+	`bash ./android_ndk_cross_compile_build_automator.sh`
 
 - Install dependencies:
 	The following instructions are for Ubuntu. Will differ on other platforms. This project requires bash.
 	`sudo apt update`
 	
 	If you want to build autoconf based projects:
-	`sudo apt install autoconf automake libtool`
+	`sudo apt install autoconf automake libtool gettext`
 	
 
 - Download Latest `Android NDK` from [here](https://developer.android.com/ndk/downloads) or an older version from [here](https://developer.android.com/ndk/downloads/older_releases). Extract it to a directory. Default is`$HOME/Android/ndk/`.
